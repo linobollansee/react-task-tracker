@@ -1,1 +1,17 @@
-body { font-family: Arial, sans-serif; background-color: #f0f2f5; margin: 0; padding: 0; }
+/* 
+  Apply global styles to the <body> element.
+  These define the overall look and feel of the application.
+*/
+body {
+  /* Set a clean, readable sans-serif font for all text. */
+  font-family: Arial, sans-serif;
+
+  /* Use a light gray background for a subtle, modern appearance. */
+  background-color: #f0f2f5;
+
+  /* Remove default browser margins to ensure consistent layout. */
+  margin: 0;
+
+  /* Remove default browser padding to prevent unwanted spacing. */
+  padding: 0;
+}
