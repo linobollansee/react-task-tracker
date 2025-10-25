@@ -1,7 +1,51 @@
-.App { max-width: 600px; margin: 50px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-header { text-align: center; margin-bottom: 20px; }
-form { display: flex; margin-bottom: 20px; }
-input[type='text'] { flex: 1; padding: 8px; font-size: 16px; }
-button { padding: 8px 12px; font-size: 16px; margin-left: 5px; cursor: pointer; }
-.task { display: flex; justify-content: space-between; padding: 8px; border-bottom: 1px solid #ddd; cursor: pointer; }
-.task.completed span { text-decoration: line-through; color: gray; }
+/* Main app container */
+.App {
+  max-width: 600px;             /* Limit the app width for better readability */
+  margin: 50px auto;            /* Center the app horizontally with vertical spacing */
+  padding: 20px;                /* Inner spacing around content */
+  background: #fff;             /* White background for contrast */
+  border-radius: 8px;           /* Rounded corners for a modern look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header section */
+header {
+  text-align: center;           /* Center-align text */
+  margin-bottom: 20px;          /* Space below the header */
+}
+
+/* Form container for adding tasks */
+form {
+  display: flex;                /* Arrange input and button horizontally */
+  margin-bottom: 20px;          /* Space below the form */
+}
+
+/* Text input field inside the form */
+input[type='text'] {
+  flex: 1;                      /* Take up remaining horizontal space */
+  padding: 8px;                 /* Inner padding for better UX */
+  font-size: 16px;              /* Legible font size */
+}
+
+/* Button in the form */
+button {
+  padding: 8px 12px;            /* Comfortable click area */
+  font-size: 16px;              /* Match input field text size */
+  margin-left: 5px;             /* Small space between input and button */
+  cursor: pointer;              /* Pointer cursor on hover for interactivity */
+}
+
+/* Individual task item */
+.task {
+  display: flex;                /* Arrange content horizontally */
+  justify-content: space-between; /* Push task title and actions to edges */
+  padding: 8px;                 /* Space inside each task item */
+  border-bottom: 1px solid #ddd; /* Separator line between tasks */
+  cursor: pointer;              /* Pointer cursor to indicate clickable area */
+}
+
+/* Style for completed tasks */
+.task.completed span {
+  text-decoration: line-through; /* Strike through completed task text */
+  color: gray;                   /* Dim text to indicate completion */
+}
