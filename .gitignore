@@ -1,3 +1,12 @@
+# Ignore the node_modules folder, which contains all installed dependencies.
+# These files can be reinstalled using 'npm install' or 'yarn install',
+# so they don't need to be tracked in Git.
 node_modules
+
+# Ignore the build folder, which typically contains compiled or bundled files
+# generated during the build process. These can be recreated from source code.
 build
+
+# Ignore environment variable files (.env) that may contain sensitive information
+# such as API keys, database credentials, and configuration secrets.
 .env
